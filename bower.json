@@ -1,0 +1,20 @@
+{
+  "name": "Binari e Decimali",
+  "homepage": "https://github.com/nicoladilillo/NumberConverter",
+  "authors": [
+    "Nicola Dilillo <nicoladilillo98@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}

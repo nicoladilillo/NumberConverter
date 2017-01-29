@@ -12,19 +12,21 @@
 		$binario = $_POST['binario'];
 		
 		echo "<form action=conversione.php method=POST >";
-		echo "<h2>Decimali</h2>";
-		echo "<input type=number name=dec0 value=".$decimale." hidden >";
+		if( $decimale > 0 )
+			echo "<br><h2>Decimali</h2>";
+		echo "<input hidden type=number name=dec0 value=".$decimale." >";
 		for($i = 1; $i <= $decimale; $i++) {
-			echo "<input type=number name=dec".$i." >";			
+			echo "<input type=number name=dec".$i." ><br>";			
 		}
 		
-		echo "<h2>Binari</h2>";
-		echo "<input type=number name=bin0 value=".$binario." hidden >";	
+		if( $binario > 0 )
+			echo "<br><h2>Binari</h2>";
+		echo "<input hidden type=number name=bin0 value=".$binario." >";	
 		for($i = 1; $i <= $binario; $i++) {
-			echo "<input type=number name=bin".$i." >";			
+			echo "<input type=text name=bin".$i." ><br>";			
 		}
 		
-		echo "<input type=submit >";
+		echo "<br><input type=submit >";
 		echo "</form>";
 	
 	?>

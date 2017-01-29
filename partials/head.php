@@ -6,6 +6,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title><?=$title;?></title>
   <link rel="stylesheet" type="text/css" href="assets/css/master.css">
+  <link rel="icon" href="assets/img/binary.png">
 </head>
 <body>
   <h1>Conversione Numeri

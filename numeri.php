@@ -2,43 +2,44 @@
 	<small>Inserisci i numeri da convertire</small></h1>
 
 	<div class="container">
-	<?php
+		<form action="conversione.php" method="POST" id="second">
 
-		$decimale = $_POST['decimale'];
-		$binario = $_POST['binario'];
+			<?php
 
-		echo "<form action=conversione.php method=POST >";
-		if( $decimale > 0 )
-			echo "<br><h2>Decimali</h2>";
-		echo "<input hidden type=hidden name=dec0 value=".$decimale." >";
-		for($i = 1; $i <= $decimale; $i++) {
-			echo "<div class=group>
-		      		<input type=number name=dec".$i." required>
-		      		<span class=highlight></span>
-		      		<span class=bar></span>
-		      		<label>Numero".$i."</label>
-		  			</div>";
-		}
+				$decimale = $_POST['decimale'];
+				$binario = $_POST['binario'];
 
-		if( $binario > 0 )
-			echo "<br><h2>Binari</h2>";
-		echo "<input hidden type=hidden name=bin0 value=".$binario." >";
-		for($i = 1; $i <= $binario; $i++) {
-			echo "<div class=group>
-		      		<input type=number name=bin".$i." required>
-							<span class=highlight></span>
-		      		<span class=bar></span>
-		      		<label>Numero".$i."</label>
-		  			</div>";
-		}
+				if( $decimale > 0 )
+					echo "<br><h2>Decimali</h2>";
+				echo "<input hidden type=hidden name=decimale value=".$decimale." >";
+				for($i = 1; $i <= $decimale; $i++) {
+					echo "<div class=group>
+				      		<input type=number name=dec".$i." required>
+				      		<span class=highlight></span>
+				      		<span class=bar></span>
+				      		<label>Numero".$i."</label>
+				  			</div>";
+				}
 
-	?>
-		<div class="group submit">
-			<input type="submit" values="Avanti" >
-		</div>
+				if( $binario > 0 )
+					echo "<br><h2>Binari</h2>";
+				echo "<input hidden type=hidden name=binario value=".$binario." >";
+				for($i = 1; $i <= $binario; $i++) {
+					echo "<div class=group>
+				      		<input type=text name=bin".$i." required>
+									<span class=highlight></span>
+				      		<span class=bar></span>
+				      		<label>Numero".$i."</label>
+				  			</div>";
+				}
 
-	</form>
+			?>
 
+			<div class="group submit">
+				<input type="submit" values="Avanti" >
+			</div>
+
+		</form>
 	</div>
 
 <?php require('./partials/footer.php'); ?>

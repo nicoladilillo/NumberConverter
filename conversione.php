@@ -1,3 +1,5 @@
+<?php $title = 'Conversione'; require('./partials/head.php'); ?>
+
 <?php
 	
 	$decimale = $_POST['dec0'];
@@ -43,3 +45,6 @@
 		echo $c."<br>";
 		
 	}
+?>
+
+<?php require('./partials/tail.php'); ?>

@@ -1,10 +1,4 @@
-<html>
-
-<head>
-	<title>Inserimento numeri</title>
-</head>
-
-<body>
+<?php $title = 'Inserimento numeri'; require('./partials/head.php'); ?>
 
 	<?php
 	
@@ -31,6 +25,4 @@
 	
 	?>
 
-</body>
-
-</html>
+<?php require('./partials/tail.php'); ?>

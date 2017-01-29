@@ -1,10 +1,4 @@
-<html>
-
-<head>
-	<title>Decimali & Binari</title>
-</head>
-
-<body>
+<?php $title = 'Binari&Decimali'; require('./partials/head.php'); ?>
 
 	<form action="numeri.php" method="POST" >
 		Decimali: <input type="number" name="decimale" ><br>
@@ -12,6 +6,4 @@
 		<br><input type="submit" >
 	</form>
 
-</body>
-
-</html>
+<?php require('./partials/tail.php'); ?>

@@ -1,6 +1,5 @@
 <?php $title = 'Binari&Decimali'; require('./partials/head.php'); ?>
-
-	<h2>Conversione Numeri<small>quanti numeri da convertire?</small></h2>
+	<small>Quanti numeri da convertire?</small></h1>
 
 	<div class="container">
 
@@ -11,16 +10,18 @@
 		      <span class="highlight"></span>
 		      <span class="bar"></span>
 		      <label>Decimali</label>
-		    </div>
+		  </div>
 
 			<div class="group">
-		      <input type="text" name="binario" required>
+		      <input type="number" name="binario" required>
 		      <span class="highlight"></span>
 		      <span class="bar"></span>
 		      <label>Binari</label>
-		    </div>
+		  </div>
 
-			<input type="submit" >
+			<div class="group submit">
+				<input type="submit" values="Avanti" >
+			</div>
 
 		</form>
 

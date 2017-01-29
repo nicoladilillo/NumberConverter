@@ -3,8 +3,8 @@
 
 	<?php
 
-		$decimale = $_POST['dec0'];
-		$binario = $_POST['bin0'];
+		$decimale = $_POST['decimale'];
+		$binario = $_POST['binario'];
 
 		//Binary from Decimal
 		if( $decimale > 0 )

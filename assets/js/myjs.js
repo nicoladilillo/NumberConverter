@@ -5,6 +5,15 @@ $(document).ready(function() {
       window.alert(string);
       e.preventDefault(e);
     }
+	
+	$('form').submit(function(e) {
+		$('form input[type=number]').each(function() {
+			if ( $(this).val() < 0 ) {
+				errore("Inserisci valori maggiori di 0", e);
+				return false;
+			}			
+		})
+	})
 
 	$('#second').submit(function(e) {
 		$('#second input[type=text]').each(function() {

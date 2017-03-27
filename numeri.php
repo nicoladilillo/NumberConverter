@@ -8,6 +8,7 @@
 
 				$decimale = $_POST['decimale'];
 				$binario = $_POST['binario'];
+				$fattoriale = $_POST['fattoriale'];
 
 				if( $decimale > 0 )
 					echo "<br><h2>Decimali</h2>";
@@ -28,6 +29,18 @@
 					echo "<div class=group>
 				      		<input type=text name=bin".$i." required>
 									<span class=highlight></span>
+				      		<span class=bar></span>
+				      		<label>Numero".$i."</label>
+				  			</div>";
+				}
+				
+				if( $fattoriale > 0 )
+					echo "<br><h2>Fattoriali</h2>";
+				echo "<input hidden type=hidden name=fattoriale value=".$fattoriale." >";
+				for($i = 1; $i <= $fattoriale; $i++) {
+					echo "<div class=group>
+				      		<input type=number name=fat".$i." required>
+				      		<span class=highlight></span>
 				      		<span class=bar></span>
 				      		<label>Numero".$i."</label>
 				  			</div>";

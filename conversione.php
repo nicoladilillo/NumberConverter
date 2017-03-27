@@ -5,6 +5,7 @@
 
 		$decimale = $_POST['decimale'];
 		$binario = $_POST['binario'];
+		$fattoriale = $_POST['fattoriale'];
 
 		//Binary from Decimal
 		if( $decimale > 0 )
@@ -46,6 +47,32 @@
 			echo $c."<p>";
 
 		}
+		
+		//Fattoiale
+		if( $fattoriale> 0 )
+			echo "<br><h2>Fattoriale</h2>";
+		for($i = 1; $i <= $fattoriale; $i++) {
+
+			$n  = $_POST["fat$i"];
+			echo "<p>".$n." = ";
+
+			for($y = $n; $y > 1; $y-- )
+				$n = $n*($y-1);
+
+			if ( $n == 0 )
+				$n = 1;
+
+			echo $n."<p>";
+
+		}
+		
 	?>
+	
+	<form action="index.php" method="POST" id="first">
+		<div class="group submit">
+			<input type="submit" values="Home" >
+		</div>
+	</form>	
+	
 
 <?php require('./partials/footer.php'); ?>

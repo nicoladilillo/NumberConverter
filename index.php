@@ -18,6 +18,13 @@
 		      <span class="bar"></span>
 		      <label>Binari</label>
 		  </div>
+		  
+		  <div class="group">
+		      <input type="number" name="fattoriale" required>
+		      <span class="highlight"></span>
+		      <span class="bar"></span>
+		      <label>Fattoriali</label>
+		  </div>
 
 			<div class="group submit">
 				<input type="submit" values="Avanti" >
